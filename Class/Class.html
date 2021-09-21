@@ -5,6 +5,21 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Class Challenge</title>
+		<script src="./Shape.js"></script>
+		<script src="./Circle.js"></script>
+		<script src="./Rectangle.js"></script>
+		<script src="./Triangle.js"></script>
 	</head>
-	<body></body>
+	<body>
+		<h1>Open consoled to view output!</h1>
+		<script>
+			var circ = new Circle("green", 2);
+			var rect = new Rectangle("blue", 5, 10);
+			var tri = new Triangle("red", 20, 15);
+
+			console.log(circ.getArea());
+			console.log(rect.getArea());
+			console.log(tri.getArea());
+		</script>
+	</body>
 </html>
