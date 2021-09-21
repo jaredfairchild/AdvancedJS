@@ -1,0 +1,57 @@
+/* Styles */
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: large;
+}
+
+#colors {
+	float: left;
+	overflow: hidden;
+	width: 280px;
+}
+
+#colors li {
+	background-color: purple;
+	color: black;
+	cursor: auto;
+	font-size: 30px;
+	line-height: 100px;
+	list-style-position: inside;
+	list-style-type: none;
+	height: 100px;
+	float: left;
+	width: 100px;
+	margin: 10px;
+}
+
+#colors li.orange {
+	background-color: orange;
+}
+
+#colors li.teal {
+	background-color: teal;
+}
+
+#colors li.chartreuse {
+	background-color: chartreuse;
+}
+
+#colors li.on {
+	background-color: black;
+}
+p#start {
+	cursor: pointer;
+	color: blue;
+}
+
+p#start:hover {
+	text-decoration: underline;
+}
+
+.playing #colors li {
+	cursor: pointer;
+}
+
+.game-over #colors li {
+	opacity: 0.5;
+}
