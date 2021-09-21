@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>OOP Assignment</title>
+		<script src="./Dog.js"></script>
+	</head>
+	<body>
+		<script>
+			var barley = new Dog(
+				"Newfoundland",
+				"Black and White",
+				"Barley",
+				30,
+				150
+			);
+		</script>
+
+		<button id="sitBtn" onclick="console.log(barley.sit())">Sit</button>
+		<button id="shakeBtn" onclick="console.log(barley.shake())">Shake</button>
+		<button id="layDownBtn" onclick="console.log(barley.layDown())">
+			Lay down
+		</button>
+	</body>
+</html>
