@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Dad Jokes</title>
+	</head>
+	<body>
+		<h1>Dad Jokes!</h1>
+		<button onclick="getDadJoke()">Click for joke</button>
+
+		<br /><br />
+
+		<div id="joke"></div>
+
+		<script>
+			function getDadJoke() {
+				var URL = "https://icanhazdadjoke.com/";
+
+				var xhr = new XMLHttpRequest();
+				xhr.open("GET", "https://icanhazdadjoke.com/");
+				xhr.setRequestHeader("Accept", "application/json");
+				xhr.setRequestHeader("User-Agent", "bootcamp");
+
+				xhr.onload = function () {
+					if (xhr.readyState == 4) {
+						var joke = JSON.parse(xhr.responseText);
+						document.getElementById("joke").innerHTML = joke.joke;
+					}
+				};
+
+				xhr.send();
+			}
+		</script>
+	</body>
+</html>
