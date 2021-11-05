@@ -1,2 +1,3 @@
 # AdvancedJS
-Repository for the Advanced JavaScript on The Tech Academy
+
+Repository for the Advanced JavaScript course on The Tech Academy
