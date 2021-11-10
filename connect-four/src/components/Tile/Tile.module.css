@@ -1,0 +1,25 @@
+.tile {
+	width: 75px;
+	height: 75px;
+	border: solid 10px #cf33ff;
+	border-radius: 100%;
+	background-color: white;
+}
+.chip {
+	width: 75px;
+	height: 75px;
+	border-radius: 100%;
+	background-color: gray;
+}
+.yellow {
+	background-color: #ffff33;
+}
+.red {
+	background-color: #ff010b;
+}
+.green {
+	background-color: green;
+}
+.blue {
+	background-color: blue;
+}
